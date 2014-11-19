@@ -138,6 +138,7 @@ class TestCase(unittest.TestCase):
         str(record)
         unicode(record)
         dict(record.header)
+        dict(record.origin)
         assert dict(record) == record.metadata
 
     # Test OAI-specific exceptions
